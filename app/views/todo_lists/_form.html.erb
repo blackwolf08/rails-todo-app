@@ -2,7 +2,6 @@
   <% if todo_list.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(todo_list.errors.count, "error") %> prohibited this todo_list from being saved:</h2>
-
       <ul>
         <% todo_list.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,18 +9,16 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
-
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "form-control" %>
   </div>
-
+  <br />
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Create TODO List", class: "btn btn-success" %>
   </div>
 <% end %>
