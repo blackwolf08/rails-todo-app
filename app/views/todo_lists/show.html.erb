@@ -1,17 +1,20 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
-<div id="todo_items_wrapper">
- <%= render @todo_list.todo_items %>
- <div id="form">
-  <%= render "todo_items/form" %>
- </div>
+<div class="row">
+  <div class='col-6'>
+    <strong>Title:</strong>
+    <%= @todo_list.title %>
+  </div>
+  <div class='col-6'>
+    <strong>Description:</strong>
+    <%= @todo_list.description %>
+  </div>
 </div>
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<br/>
+<div id="todo_items_wrapper">
+  <%= render @todo_list.todo_items %>
+  <div id="form">
+    <%= render "todo_items/form" %>
+  </div>
+</div>
+<%= link_to 'Edit', edit_todo_list_path(@todo_list), class: "btn btn-inverse"  %> |
+<%= link_to 'Back', todo_lists_path, class: "btn btn-inverse"   %>

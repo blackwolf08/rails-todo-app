@@ -1,0 +1,30 @@
+
+
+* {
+	box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+ 	height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#notice {
+	text-align: center;
+	font-size: 0.6em;
+	font-weight: 100;
+}
+
+
