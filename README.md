@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Sunny Dhama TODO App - RoR
 
-Things you may want to cover:
+### Screenshots
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![home screen](https://github.com/blackwolf08/rails-todo-app/blob/master/screenshots/home.png?raw=true)
+![new todo](https://github.com/blackwolf08/rails-todo-app/blob/master/screenshots/new-todo.png?raw=true)
+![todo list](https://github.com/blackwolf08/rails-todo-app/blob/master/screenshots/todo-list.png?raw=true)
